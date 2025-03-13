@@ -21,7 +21,7 @@ jobs:
       - run : npm install
       - run : node app.js &
       - run : sleep 10
-      - run : pkill -f "node src/app.js"
+      - run : pkill -f "node app.js"
 
   test:
     runs-on: ubuntu-latest
